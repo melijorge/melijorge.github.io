@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudio Contable MGJ</title>
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- Font Poppins-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,300&display=swap" rel="stylesheet">
+    <!-- CSS-->
+    <link rel="stylesheet" href="/CSS/estilos.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="images/FaviconMGJ.png" type="image/x-icon">
+</head>
+<body>
+  <div class="container">
+      <nav class="nav-main">
+        <img src="images/logo2MGJ.png" alt="LogoMGJ" class="nav-brand">
+          <ul class="nav-menu">
+            <li>
+              <a href="index.html">Inicio</a>
+            </li>
+            <li>
+                <a href="Servicios.html">Servicios</a>
+              </li>
+              <li>
+                <a href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+       </nav>
+      <hr>
+
+      <header class="showcase3">
+        <h2>Comunícate con nosotros</h2>
+        
+      </header>
+      <br>
+    </br>
+  
+      <section class="contact">
+        <div class="u-wrapper">
+
+          <h3 class="tag"><span>Envíenos su mensaje o sugerencia y le responderemos a la brevedad</span></h3>
+          
+          <div class="contact-content">
+    
+            <form id="form" action="" class="form">
+             
+              <label for="nombre">Nombre Completo<span></span></label>
+              <input name="name" type="text" id="nombre" placeholder="Maria" onkeyup="validateNombre()">
+              <span id="nombre-error"></span>
+
+              <label for="email">Correo electrónico <span></span></label>
+              <input name="email" type="text" id="email" placeholder="mariagomez@gmail.com" onkeyup="validateEmail()">
+              <span id="email-error"></span>
+
+              <label for="message">Mensaje</label>
+              <textarea id="message" name="message" id="message" cols="20" rows="10" onkeyup="validateMessage()"></textarea>
+              <span id="message-error"></span>
+              <br>
+            </br>
+              <button onclick="return validateForm()" type="submit" class="btn primary full">Enviar mensaje</button>
+              <span id="submit-error"></span>
+
+            </form>
+           
+          </div>
+        </div>
+      </section>
+      <br></br> <br></br> <br></br>
+      <div id="mapa">
+        <h3>Nuestra oficina</h3>
+        <h4>Chacabuco 385, Pergamino, Buenos Aires</h4>
+        <h4>02477 - 431132</h4>
+        <h4>meli_jorge88@hotmail.com</h4>
+        <br></br>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.9914233137056!2d-60.56146088507674!3d-33.8898747275837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b9b55e0628c203%3A0x3a9f46f64dd110d7!2sChacabuco%20385%2C%20Pergamino%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1653687641795!5m2!1ses-419!2sar" width="1200" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <br></br>
+    <br></br>
+
+<footer class="pie-pagina">
+  <div class="grupo-1">
+      <div class="box">
+          <figure>
+              <a href="#">
+                  <img src="/images/logo2MGJ.png" alt="LogoMGJ">
+              </a>
+          </figure>
+      </div>
+      <div class="box">
+          <h2>SOBRE NOSOTROS</h2>
+          <p>Somos un grupo de profesionales orientados a una gran variedad de actividades desarrolladas por empresas unipersonales, sociedades comerciales, entre otras</p>
+          <p></p>
+      </div>
+      <div class="box">
+          <h2>SIGUENOS EN NUESTRAS REDES</h2>
+          <div class="red-social">
+              <a href="#" class="fa-brands fa-facebook-f"></a>
+              <a href="#" class="fa-brands fa-instagram"></a>
+              <a href="#" class="fa-brands fa-twitter"></a>
+          </div>
+      </div>
+  </div>
+  <div class="grupo-2">
+      <small>&copy; 2022 <b>Melisa Gisela Jorge</b> - Todos los Derechos Reservados.</small>
+  </div>
+</footer>
+
+<script src="/JS/formulario.js"></script>
+
+</body>
+</html>
